@@ -13,7 +13,7 @@ const NavBox = styled.nav`
   border-bottom: 1px solid #7676762f;
 `
 
-export default function NavBar(props) {
+export default function NavBar() {
   return (
     <NavBox>
       <Logo />
