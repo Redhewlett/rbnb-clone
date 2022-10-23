@@ -1,15 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
-//button
+//components
 import FilterButton from './FilterButton'
+import FilterSettings from './FilterSettings'
+import ChevronButton from '../chevronButton/ChevronButton'
 //options
 import Options from '../../assets/filter_icons/Options'
 
 const Container = styled.section`
   width: 100vw;
-  height: 5vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
   background-color: beige;
-  padding-inline: 4vw;
+  padding-top: 1vw;
+  position: relative;
+  .chevron {
+    position: absolute;
+  }
+  .chevron:nth-of-type(1) {
+    left: 4vw;
+  }
+  .chevron:nth-of-type(2) {
+    right: 10vw;
+  }
 `
 const Inner = styled.div`
   width: 83%;
@@ -19,7 +35,7 @@ const Inner = styled.div`
   align-items: center;
   gap: 1.4em;
   background-color: aquamarine;
-  /* overflow: visible hidden; */
+  overflow: hidden;
 `
 
 export default function Filter() {
@@ -30,6 +46,9 @@ export default function Filter() {
           <FilterButton key={index} img={option.img} alt={option.alt} title={option.title} />
         ))}
       </Inner>
+      <ChevronButton />
+      <ChevronButton direction='right' />
+      <FilterSettings />
     </Container>
   )
 }

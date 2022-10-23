@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: max-content;
-  aspect-ratio: 1;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,16 +13,18 @@ const Wrapper = styled.div`
   .radio-btn {
     width: 100%;
     border-bottom: 2px solid transparent;
-    padding-bottom: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.7em;
     cursor: pointer;
-    font-size: 0.7em;
     color: #767676;
     transition: all ease-in-out 200ms;
+  }
+  .radio-btn h2 {
+    width: max-content;
+    font-size: 0.7em;
+    font-weight: 400;
   }
   .radio-btn:hover {
     border-bottom: 2px solid #767676;
@@ -52,7 +54,7 @@ export default function FilterButton(props) {
         <input type='radio' name='radio' />
         <span className='radio-btn'>
           <img src={props.img} alt={props.altTxt} />
-          <div>{props.title}</div>
+          <h2>{props.title}</h2>
         </span>
       </label>
     </Wrapper>
