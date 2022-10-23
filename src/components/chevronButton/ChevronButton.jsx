@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-
 //img
-import chevron from '../../assets/icons/chevron-left-solid.svg'
+import chevron from './assets/chevron-left-solid.svg'
 
 const Button = styled.button`
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.4vw;
+  height: 1.4vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,38 +17,22 @@ const Button = styled.button`
     transform: rotate(${(props) => props.direction + 'deg'});
   }
   :hover {
-    box-shadow: 0px 7px 7px -6px rgba(0, 0, 0, 0.301);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.301);
     cursor: pointer;
   }
 `
+const angles = {
+  top: 90,
+  bottom: -90,
+  right: 180,
+  left: 0
+}
 
 export default function ChevronButton(props) {
-  const [direction, setDirection] = useState(0)
-
-  useEffect(() => {
-    switch (props.direction) {
-      case 'right':
-        setDirection(180)
-        break
-      case 'top':
-        setDirection(90)
-        break
-      case 'bottom':
-        setDirection(-90)
-        break
-      default:
-        return setDirection(0)
-    }
-
-    //cleanup
-    return () => {
-      setDirection(0)
-    }
-  }, [props.direction])
-
+  const direction = angles?.[props.direction]
   return (
-    <Button className='chevron' direction={direction} onClick={props.onClick}>
-      <img src={chevron} alt='chevron icon' />
+    <Button direction={direction} onClick={props.onClick}>
+      <img role='button' id={props.direction} src={chevron} alt='chevron icon' />
     </Button>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../../../assets/icons/airbnb.svg'
+import logo from './assets/airbnb.svg'
 
 const LogoBox = styled.div`
   display: flex;
@@ -13,9 +13,8 @@ const LogoBox = styled.div`
     color: var(--main);
     letter-spacing: -0.05em;
   }
-
   img {
-    width: 1.6vw;
+    width: 1.7vw;
     aspect-ratio: 1;
     filter: invert(56%) sepia(39%) saturate(5896%) hue-rotate(323deg) brightness(98%) contrast(109%);
   }

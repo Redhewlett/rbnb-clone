@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 //icon
-import search from '../../../assets/icons/magnifying-glass-solid.svg'
+import search from './assets/magnifying-glass-solid.svg'
 
 const SearchBox = styled.div`
   width: max-content;
@@ -13,10 +13,10 @@ const SearchBox = styled.div`
   border-radius: 30px;
   border: 1px solid #7676762f;
   font-size: 0.8vw;
-  box-shadow: 0px 6px 7px -7px rgba(0, 0, 0, 0.336);
+  box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.336);
   transition: all ease-in-out 300ms;
   :hover {
-    box-shadow: 0px 7px 7px -6px rgba(0, 0, 0, 0.356);
+    box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.356);
     cursor: pointer;
   }
   p {
@@ -41,7 +41,7 @@ const SearchBox = styled.div`
     background-color: var(--main);
   }
   span img {
-    width: 0.7vw;
+    width: 0.8vw;
     aspect-ratio: 1;
     filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(228deg) brightness(106%) contrast(103%);
   }

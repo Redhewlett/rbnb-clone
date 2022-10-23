@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import React from 'react'
 //icon
-import globe from '../../../assets/icons/globe.svg'
-import user from '../../../assets/icons/circle-user-solid.svg'
-import burger from '../../../assets/icons/bars-solid.svg'
+import globe from './assets/globe.svg'
+import user from './assets/circle-user-solid.svg'
+import burger from './assets/bars-solid.svg'
 
 const LeftMenu = styled.div`
   width: max-content;
@@ -44,7 +44,7 @@ const Pill = styled.div`
   font-size: 0.8vw;
   transition: all ease-in-out 300ms;
   :hover {
-    box-shadow: 0px 7px 7px -6px rgba(0, 0, 0, 0.356);
+    box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.356);
     cursor: pointer;
   }
   img {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 //img
-import settings from '../../assets/icons/sliders-solid.svg'
+import settings from './assets/sliders-solid.svg'
 
 const Settings = styled.button`
   width: max-content;
@@ -17,7 +17,6 @@ const Settings = styled.button`
     width: 0.7vw;
   }
 `
-
 export default function FilterSettings(props) {
   return (
     <Settings onClick={props.onClick}>

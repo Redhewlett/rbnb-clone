@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 //components
-import Logo from './logo/Logo'
-import SearchBar from './searchBar/SearchBar'
-import Menu from './menu/Menu'
+import Logo from './components/Logo/Logo'
+import SearchBar from './components/SearchBar/SearchBar'
+import Menu from './components/Menu/Menu'
 
 const NavBox = styled.nav`
   display: flex;
@@ -12,7 +12,6 @@ const NavBox = styled.nav`
   padding: 0.4vw 4vw;
   border-bottom: 1px solid #7676762f;
 `
-
 export default function NavBar() {
   return (
     <NavBox>
