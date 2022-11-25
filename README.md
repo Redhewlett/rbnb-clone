@@ -1,4 +1,4 @@
-#RBNB clone
+# RBNB clone
 
- Cloning rbnb as much as possible:
+Cloning rbnb as much as possible:
 improving my folder structure and component design
