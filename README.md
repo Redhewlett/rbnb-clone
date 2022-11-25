@@ -1,4 +1,5 @@
 # RBNB clone
 
 Cloning rbnb as much as possible:
-improving my folder structure and component design
+
+Improving my folder structure and component design
