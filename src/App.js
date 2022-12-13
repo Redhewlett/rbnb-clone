@@ -9,7 +9,9 @@ function App() {
         <NavBar />
         <Filter />
       </header>
-      <Card />
+      <main>
+        <Card />
+      </main>
     </div>
   )
 }
