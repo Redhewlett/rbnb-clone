@@ -32,7 +32,7 @@ const angles = {
 }
 
 export default function ChevronButton(props) {
-  const direction = angles?.[props.direction]
+  const direction = angles[props.direction]
   return (
     <Button className={props.className} direction={direction} id={props.direction} onClick={props.onClick}>
       <img role='button' src={chevron} alt='chevron icon' />

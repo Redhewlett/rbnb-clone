@@ -1,3 +1,4 @@
+import React from 'react'
 import NavBar from './components/Navigation/NavBar'
 import Filter from './components/Filter/Filter'
 import Card from './components/Card/Card'
