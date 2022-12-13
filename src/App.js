@@ -1,5 +1,6 @@
 import NavBar from './components/Navigation/NavBar'
 import Filter from './components/Filter/Filter'
+import Card from './components/Card/Card'
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
         <NavBar />
         <Filter />
       </header>
+      <main>
+        <Card />
+      </main>
     </div>
   )
 }
