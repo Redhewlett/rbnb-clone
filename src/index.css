@@ -5,8 +5,15 @@
   --lighteGrey: #767676;
   --lighterGrey: #c7c7c7;
 }
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
