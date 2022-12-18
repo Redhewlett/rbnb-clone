@@ -11,7 +11,7 @@ const Button = styled.button`
   align-items: center;
   border-radius: 50%;
   border: 1px solid var(--lighterGrey);
-
+  transition: all ease-in-out 200ms;
   img {
     width: 0.5vw;
     transform: rotate(${(props) => props.direction + 'deg'});
@@ -21,7 +21,6 @@ const Button = styled.button`
     transform: scale(1.1);
     box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.301);
     cursor: pointer;
-    transition: all ease-in-out 200ms;
   }
 `
 const angles = {
